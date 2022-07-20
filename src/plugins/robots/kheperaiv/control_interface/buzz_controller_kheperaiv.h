@@ -53,7 +53,7 @@ public:
    void SetWheelSpeedsFromVector(const CVector2& c_heading);
    void SetLEDs(const CColor& c_color);
 
-private:
+protected:
 
    virtual buzzvm_state RegisterFunctions();
 
