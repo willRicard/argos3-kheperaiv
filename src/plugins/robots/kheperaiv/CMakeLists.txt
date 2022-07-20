@@ -36,12 +36,14 @@ if(ARGOS_BUILD_FOR STREQUAL "khiv")
     real_robot/real_kheperaiv_differential_steering_actuator.h
     #real_robot/real_kheperaiv_gripper_actuator.h
     real_robot/real_kheperaiv_leds_actuator.h
+    real_robot/real_kheperaiv_range_and_bearing_actuator.h
     real_robot/real_kheperaiv_battery_sensor.h
     real_robot/real_kheperaiv_camera_sensor.h
     real_robot/real_kheperaiv_encoder_sensor.h
     real_robot/real_kheperaiv_ground_sensor.h
     real_robot/real_kheperaiv_lidar_sensor.h
     real_robot/real_kheperaiv_proximity_sensor.h
+    real_robot/real_kheperaiv_range_and_bearing_sensor.h
     real_robot/real_kheperaiv_ultrasound_sensor.h)
 endif(ARGOS_BUILD_FOR STREQUAL "khiv")
 
@@ -97,12 +99,14 @@ if(ARGOS_BUILD_FOR STREQUAL "khiv")
     real_robot/real_kheperaiv_differential_steering_actuator.cpp
     #real_robot/real_kheperaiv_gripper_actuator.cpp
     real_robot/real_kheperaiv_leds_actuator.cpp
+    real_robot/real_kheperaiv_range_and_bearing_actuator.cpp
     real_robot/real_kheperaiv_battery_sensor.cpp
     real_robot/real_kheperaiv_camera_sensor.cpp
     real_robot/real_kheperaiv_encoder_sensor.cpp
     real_robot/real_kheperaiv_ground_sensor.cpp
     real_robot/real_kheperaiv_lidar_sensor.cpp
     real_robot/real_kheperaiv_proximity_sensor.cpp
+    real_robot/real_kheperaiv_range_and_bearing_sensor.cpp
     real_robot/real_kheperaiv_ultrasound_sensor.cpp)
 endif(ARGOS_BUILD_FOR STREQUAL "khiv")
 
