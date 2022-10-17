@@ -5,6 +5,7 @@
 
 CRealKheperaIVLEDsActuator::CRealKheperaIVLEDsActuator(knet_dev_t* pt_dspic) :
    CRealKheperaIVDevice(pt_dspic) {
+   m_tSettings.resize(3);
    kh4_SetRGBLeds(0, 0, 0, 0, 0, 0, 0, 0, 0, GetDSPic());
 }
    

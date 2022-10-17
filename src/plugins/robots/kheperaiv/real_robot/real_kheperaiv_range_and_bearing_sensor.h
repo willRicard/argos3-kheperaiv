@@ -1,7 +1,7 @@
 /**
  * @file <argos3/plugins/robots/generic/control_interface/ci_range_and_bearing_sensor.h>
  *
- * @author Carlo Pinciroli <ilpincy@gmail.com>
+ * @author Guillaume Ricard <guillaume.ricard@polymtl.ca>
  */
 
 #ifndef KHEPERAIV_RANGE_AND_BEARING_SENSOR_H
@@ -20,9 +20,13 @@ namespace argos {
    /****************************************/
    /****************************************/
 
-   class CRealKheperaIVRangeAndBearingSensor : public CCI_Sensor {
+   class CRealKheperaIVRangeAndBearingSensor : public CCI_RangeAndBearingSensor,
+                                               public CRealKheperaIVDevice {
 
    public:
+
+      CRealKheperaIVRangeAndBearingSensor(knet_dev_t *pt_dspic);
+      virtual void Do(Real f_elapsed_time);
 
       struct SPacket {
          Real Range;

@@ -1,7 +1,7 @@
 /**
  * @file <argos3/plugins/robots/generic/control_interface/ci_range_and_bearing_actuator.h>
  *
- * @author Carlo Pinciroli <ilpincy@gmail.com>
+ * @author Guillaume Ricard <guillaume.ricard@polymtl.ca>
  */
 
 #ifndef KHEPERAIV_RANGE_AND_BEARING_ACTUATOR_H
@@ -20,7 +20,11 @@ namespace argos {
 
    public:
 
+      CRealKheperaIVRangeAndBearingActuator(knet_dev_t *pt_dspic);
+
       virtual ~CRealKheperaIVRangeAndBearingActuator() {}
+
+      void Do(Real f_elapsed_time);
 
       size_t GetSize() const;
 
